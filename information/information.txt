@@ -1,0 +1,57 @@
+Code With Yousaf Youtube Channel:
+https://youtu.be/Rm4__WgPncI?si=PRW-_Jd8jYCP-Aeo
+
+Note:
+
+Performing CRUD (Create, Read, Update, Delete) operations with JSON Server involves interacting with a RESTful API that's created based on a JSON file. JSON Server is a simple mock server that allows you to quickly set up a REST API with CRUD operations using a JSON file as the data source.
+
+Here's a basic guide on how to perform CRUD operations with JSON Server:
+
+Step 1: Install JSON Server
+Install JSON Server globally using npm:
+
+npm install -g json-server
+
+Step 2: Create a JSON File
+Create a JSON file (db.json) with some initial data. For example:
+{
+  "posts": [
+    { "id": 1, "title": "Post 1" },
+    { "id": 2, "title": "Post 2" },
+    { "id": 3, "title": "Post 3" }
+  ]
+}
+
+Step 3: Start JSON Server
+Run the JSON Server with the following command:
+json-server --watch db.json --port 3000
+
+Step 4: Perform CRUD Operations
+Now you can use any HTTP client (e.g., cURL, Postman, or a web browser) to interact with the REST API.
+
+Read (GET):
+
+Retrieve all posts: GET http://localhost:3000/posts
+Retrieve a specific post: GET http://localhost:3000/posts/1
+
+Create (POST):
+
+Add a new post: POST http://localhost:3000/posts
+Request body: {"title": "New Post"}
+
+Update (PUT or PATCH):
+
+Update a post: PUT http://localhost:3000/posts/1 or PATCH http://localhost:3000/posts/1
+Request body: {"title": "Updated Post"}
+
+Delete (DELETE):
+
+Delete a post: DELETE http://localhost:3000/posts/1
+
+Additional Notes:
+JSON Server automatically generates unique IDs for new items.
+You can customize the db.json file to include more data and nested structures.
+JSON Server supports filtering, sorting, and pagination. Check the official documentation for more details.
+
+
+

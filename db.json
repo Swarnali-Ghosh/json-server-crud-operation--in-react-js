@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Post 12",
+      "email": "s12@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Post 2",
+      "email": "s@gmail.com"
+    },
+    {
+      "name": "Piku Dutta",
+      "email": "piku9296@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "Sumi Das",
+      "email": "sumi@gmail.com",
+      "id": 6
+    }
+  ]
+}
